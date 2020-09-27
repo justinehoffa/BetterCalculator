@@ -61,15 +61,7 @@ Module BetterCalculator
                 ElseIf userInput = "divide" Or userInput = "4" Then
                     Console.WriteLine(vbNewLine & firstNumber & " / " & secondNumber & " = " & firstNumber / secondNumber)
 
-                ElseIf userInput <> "multiply" _
-                    And userInput <> "add" _
-                    And userInput <> "divide" _
-                    And userInput <> "Subtract" _
-                    And userInput <> "1" _
-                    And userInput <> "2" _
-                    And userInput <> "3" _
-                    And userInput <> "4" _
-                    Then
+                Else 'Else will cover all other userInput
 
                     Console.WriteLine(vbNewLine & "Only add, subtract, multiply or divide will work")
                     Console.WriteLine("Or 1, 2, 3, or 4")
